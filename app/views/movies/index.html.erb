@@ -1,0 +1,5 @@
+<h1>Movie一覧ページ</h1>
+<% @movies.each do |movie| %>
+  <p><%= "タイトル：#{movie.name}" %></p>
+  image_tag(movie.image_url)
+<% end %>
